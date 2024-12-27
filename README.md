@@ -1,7 +1,61 @@
+# Notas a tener en cuenta:
+🚀 Cómo Usar el Proyecto
+  Requisitos Previos:
+  Java Development Kit (JDK) instalado.
+  IDE recomendado: Eclipse o cualquier otro compatible con Java.
+  Pasos:
+  Clona este repositorio.
+  Importa el proyecto en tu IDE.
+  Ejecuta la clase Main para iniciar el programa.
+  💡 Notas Finales
+  Este proyecto es una excelente demostración de los principios de Programación Orientada a Objetos (POO), utilizando conceptos como:
+
+Herencia.
+  Composición.
+  Interfaces.
+  Arreglos y especialización.
+  Si tienes sugerencias o encuentras algún problema, no dudes en crear un issue o enviar un pull request. ¡Gracias por tu interés en el proyecto!
+
+## 🎯 Objetivos del Proyecto
+
+El proyecto busca modelar la lógica del juego utilizando conceptos clave de la **POO** en Java. Las principales características del proyecto son:
+
+1. Uso de **interfaces**, **arreglos** y **composición**.
+2. Aplicación de **herencia** para modelar diferentes tipos de vehículos y soldados.
+3. Implementación de un sistema para comparar y enfrentar dos ejércitos en un tablero.
+4. Utilización de métodos para simular habilidades de los soldados y capacidades de los vehículos.
+
+## 🔧 Características y Funcionalidades
+
+### 1️⃣ Uso de Interfaces, Arreglos y Composición
+- La clase `Tablero` es el centro de la batalla entre dos ejércitos. Cada ejército:
+  - Se identifica por un color (por ejemplo, Azul o Rojo).
+  - Dispone de 3 medios de combate (vehículos o soldados), que tienen un poder de combate representado como un número entero (`int`).
+  - El poder total del ejército se calcula con el método `getPoderTotal()`.
+
+2️⃣ Uso de Herencia
+Vehículos de combate: Los vehículos consumen combustible y tienen un poder de combate calculado según el tipo de vehículo:
+
+    Tanques: poder = 4 * cantidad de combustible.
+    Helicópteros: poder = 8 * cantidad de combustible + 50.
+    Aviones: poder = 10 * cantidad de combustible + 100.
+  
+Soldados: Los soldados tienen habilidades y poderes específicos según su experiencia militar:
+    Soldado: Poder = 1. Habilidad: dispara un fusil.
+    Paracaidista: Poder = 2. Habilidades: dispara un fusil, salta de un avión.
+    Comando: Poder = 3. Habilidades: dispara un fusil, salta de un avión, hace una emboscada.
+
+3️⃣ Clase Tablero
+ - La clase Tablero enfrenta a dos ejércitos y determina el resultado de la batalla. El método enfrentar():
+  - Compara el poder total de los ejércitos.
+  - Imprime el resultado:
+  - Si un ejército tiene mayor poder: "El ejército X ganó la batalla con un poder de combate de XXXX".
+  - En caso de empate: "Se produjo un empate".
+
 # -POO---Juego---T.E.G.-
 Proyecto: Programa de un juego (Táctica y Estrategia de Guerra) en Java con el IDE Eclipce. Usando las mecanicas de la Programacion Orientada a Objetos.
 
-T.E.G (Táctica y Estrategia de Guerra) es un popular juego de mesa que busca
+🛡️ T.E.G (Táctica y Estrategia de Guerra) es un popular juego de mesa que busca
 simular enfrentamientos militares.
 
 1. Uso de Interfaz, arreglos y composición
