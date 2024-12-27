@@ -36,10 +36,16 @@ public class Tablero {
 		
         if (poderEjercito1 > poderEjercito2) {
             System.out.println("El ejército " + ejercito1.getColor() + " ganó la batalla con un poder de combate de " + poderEjercito1 + "-");
+            //[PARA MOSTRAR EN UNA NUEVA VENTANA]
+            //return "El ejército " + ejercito1.getColor() + " ganó la batalla con un poder de combate de " + poder1 + ".";
         } else if (poderEjercito1 < poderEjercito2) {
             System.out.println("El ejército " + ejercito2.getColor() + " ganó la batalla con un poder de combate de " + poderEjercito2 + ".");
+          //[PARA MOSTRAR EN UNA NUEVA VENTANA]
+            //return "El ejército " + ejercito2.getColor() + " ganó la batalla con un poder de combate de " + poder2 + ".";
         } else {
             System.out.println("Se produjo un empate. Ambos ejércitos tienen un poder de combate de " + poderEjercito1 + ".");
+          //[PARA MOSTRAR EN UNA NUEVA VENTANA]
+            //return "Se produjo un empate. Ambos ejércitos tienen un poder de combate de " + poder1 + ".";
         }
 
 	}

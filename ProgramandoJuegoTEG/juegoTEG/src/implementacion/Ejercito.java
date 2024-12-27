@@ -70,4 +70,5 @@ public class Ejercito {
         // Mostrar el poder total del ejército
         System.out.println("Poder total del Ejército: " + getPoderTotal());
     }
+    
 }
