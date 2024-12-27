@@ -1,0 +1,73 @@
+@startuml
+
+interface Medio {
+    + getPoderCombate(): int
+}
+
+abstract class MedioCombate implements Medio {
+    - cantidadCombustible: double
+    + MedioCombate(cantidadCombustible: double)
+    + getCantidadCombustible(): double
+    + getPoderCombate(): int
+}
+
+class Tanque extends MedioCombate {
+    + getPoderCombate(): int
+}
+
+class Helicoptero extends MedioCombate {
+    + getPoderCombate(): int
+}
+
+class Avion extends MedioCombate {
+    + getPoderCombate(): int
+}
+
+class Soldado implements Medio {
+    + getPoderCombate(): int
+    + dispararFusil(): void
+}
+
+class Paracaidista extends Soldado {
+    + getPoderCombate(): int
+    + saltar(): void
+}
+
+class Comando extends Paracaidista {
+    + getPoderCombate(): int
+    + emboscar(): void
+}
+
+class Ejercito {
+    - color: String
+    - medios: MedioCombate[3]
+    + Ejercito(color: String, a: MedioCombate, b: MedioCombate, c: MedioCombate)
+    + getPoderTotal(): int
+    + getColor(): String
+    + getMedios(): MedioCombate[]
+}
+
+class Tablero {
+    - ejercito1: Ejercito
+    - ejercito2: Ejercito
+    + Tablero(ejercito1: Ejercito, ejercito2: Ejercito)
+    + enfrentar(): void
+}
+
+class Main {
+    + main(args: String[]): void
+}
+
+Medio <|.. MedioCombate
+MedioCombate <|-- Tanque
+MedioCombate <|-- Helicoptero
+MedioCombate <|-- Avion
+
+Medio <|.. Soldado
+Soldado <|-- Paracaidista
+Paracaidista <|-- Comando
+
+Ejercito *-- MedioCombate
+Tablero o-- Ejercito
+
+@enduml
