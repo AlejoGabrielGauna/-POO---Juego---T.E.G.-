@@ -104,7 +104,7 @@ simular enfrentamientos militares.
 En base a lo anterior se pide:
 ### Implementar el Main
 
-A continuación, se muestra el código del método `main`, que ejecuta las funcionalidades del proyecto:
+A continuación, se muestra el código del método `main`, que ejecuta las funcionalidades del proyecto (En el resultado final del Proyecto, el main sigue la misma funcionalidad, solo se cambio ciertos aspectos para que sea mas legible y dinamico desde la consola, pero se toamn en cuenta las mismas propiedades y parametros.):
 
 ```java
   public static void main(String[] args) {
